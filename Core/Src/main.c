@@ -103,17 +103,14 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  // Отримуємо поточний час у мілісекундах
-	        uint32_t current_millis = HAL_GetTick();
-
+	  uint32_t current_millis = HAL_GetTick(); // Поточний час у мілісекундах
 	        if (HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == GPIO_PIN_SET) {
-	       	            // Якщо кнопка НАТИСНУТА -> PD13 світиться постійно
+	       	            // Якщо кнопка натиснута - світиться
 	       	            HAL_GPIO_WritePin(GPIOD, GPIO_PIN_13, GPIO_PIN_SET);
 	       	        } else {
-	       	            // Якщо кнопка ВІДПУЩЕНА -> PD13 блимає синхронно з PD12
+	       	            // Якщо кнопка відпущена - блимає разом із PD12
 	       	             HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_RESET);
 	       	            }
-
 	        if ((current_millis - previous_millis) < pulse_width)
 	        {
 	            // Перші 200 мс періоду - вмикаємо світлодіод
@@ -128,8 +125,7 @@ int main(void)
 	        }
 	        else
 	        {
-	            // Минуло 2000 мс - скидаємо таймер для нового циклу
-	            previous_millis = current_millis;
+	            previous_millis = current_millis; // Минуло 2000 мс - скидаємо таймер для нового циклу
 	        }
   }
   /* USER CODE END 3 */
@@ -207,7 +203,7 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin : PC13 */
   GPIO_InitStruct.Pin = GPIO_PIN_13;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN; //Внутрішня підтяжка Pull-Down
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PD12 PD13 */
