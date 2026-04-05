@@ -32,4 +32,12 @@
  LED1 (PD12): GND → LED → резистор (220 Ом) → PD12
  LED2 (PD13): GND → LED → резистор (220 Ом) → PD13
  Button (PC13): VDD (+3.3V) → кнопка → PC13 (з внутрішньою підтяжкою Pull-Down)
+
+
+ 
    
+
+Відео роботи:
+
+https://github.com/user-attachments/assets/6ebc3cd8-2a96-47c5-beb3-0f4ee342d5d5
+
