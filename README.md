@@ -34,10 +34,15 @@
 - Button (PC13): VDD (+3.3V) → кнопка → PC13 (з внутрішньою підтяжкою Pull-Down)
 
 
+🎲 Налаштування в CubeMX
+
+<img width="1612" height="802" alt="image" src="https://github.com/user-attachments/assets/d31c8e43-ba92-42d3-b8d5-328d68df972b" />
+<img width="1399" height="528" alt="image" src="https://github.com/user-attachments/assets/5ee215f0-4ede-42a2-b8f7-7422a3e6b1fc" />
+
  
    
 
-Відео роботи:
+🎥Відео роботи:
 
 https://github.com/user-attachments/assets/6ebc3cd8-2a96-47c5-beb3-0f4ee342d5d5
 
